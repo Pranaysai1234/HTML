@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        DOM
+    </title>
+</head>
+
+<body>
+    <p id="1">Attack in the </p>
+    <p id="2">play in the </p>
+    <p id="3">eat in the</p>
+    <p id="4">study in the </p>
+    <img id="pic" src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle">
+    <script>
+        function work() {
+            var par = document.getElementById("3");
+            par.innerHTML = "work in the";
+            alternate();
+        }
+
+        function alternate() {
+            var image = documnet.getElementById("pic");
+            var text = image.getAttribute("alt");
+            var p4 = document.getElementById("4");
+            p4.innerHTML = text;
+        }
+        window.onload = work;
+    </script>
+</body>
+
+</html>
